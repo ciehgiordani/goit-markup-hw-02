@@ -1,30 +1,27 @@
-:root {
-    --cornflower : #E7E9FC;
+/* :root {
     --white:#FFF;
     --iris: #4D5AE5;
     --navyblue: #2E2F42;
     --slate: #434455;
     --cloud: #F4F4FD;
     --ocean: #404BBF;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
+} */
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", sans-serif;
     width: 1440px;
+
 }
 
 /* studio and portfolio html */
 header {
     display: flex;
-    flex-shrink: 0;
     height: 72px;
-    border-bottom: 1px solid var(--cornflower);
-    background: var(--white);
+    border-bottom: 1px solid #E7E9FC;
+    background: #FFF;
+    justify-content: center;
 }
 
 header a {
@@ -32,12 +29,11 @@ header a {
 }
 
 a:hover {
-    color: var(--ocean);
+    color: #404BBF;
      }
 
 header nav {
     display: flex;
-    margin-left: 156px;
 }
 
 header nav .logo{
@@ -54,30 +50,26 @@ header nav a span{
 }
 
 header nav a span.web {   
-    color:var(--iris)
+    color:#4D5AE5
    
 }
 
 header nav a span.studio {
-    color: var(--navyblue);
+    color: #2E2F42;
 }
 
 header nav ul {  
     margin-left: 36px;
     margin-top: 24px;
+    gap: 40px;
     display: flex;
-    color: var(--navyblue);
+    color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
     list-style: none;
 }
-
-header nav ul li {
-    margin-left: 40px;
-} 
-   
 
 header address{
     margin-top: 24px;
@@ -85,8 +77,8 @@ header address{
 }
 
 
-header address a { 
-    color:var(--slate);
+header address a {    
+    color:#434455;
     font-size: 16px;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
@@ -94,81 +86,78 @@ header address a {
 
 header address a.phone {
     margin-left: 40px;
-}
+} 
 
 /* studio html */
-main {
-    width: 1440px;
-}
 
-main section.hero {
-    background: var(--navyblue);
+section.hero {
+    background: #2E2F42;
     height: 600px;
 }
 
-main section.hero h1 {
+section.hero h1 {
     padding-top: 188px;
+    padding-bottom: 48px;
     font-size: 56px;
     font-weight: 700;
     line-height: 60px; /* 107.143% */
     letter-spacing: 1.12px;
-    color: var(--white);
+    color: #FFF;
     text-align: center;
-    padding-bottom: 48px;
 }
 
-main section button {
+section .order-button {
     padding: 16px 32px;
     margin-left: 636px ;
     align-items: center;
     gap: 10px;
     border-radius: 4px;
-    background: var(--iris);
+    background: #4D5AE5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
 
-main section button span {
-    color:var(--white);
+section .order-button span {
+    color:#FFF;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px; /* 150% */
     letter-spacing: 0.64px;
 }
 
-main section.feature ul {
-    margin-left: 132px;
+section.feature ul {
     margin-top: 120px;
     display: flex;
+    justify-content: center;
     list-style: none;
 }
 
-main section.feature ul li {
+section.feature ul li {
     width: 264px;
     margin-left: 24px;
 }
 
-main.section.feature ul li h2 {
-    color: var(--navyblue);
+.section.feature ul li h2 {
+    color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
 }
 
-main section.feature ul li p {
-    color: var(--slate);
+section.feature ul li p {
+    color: #434455;
     font-size: 16px;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
 }
 
-main section.wawd {
+section.services {
     margin-top: 120px;
 }
 
-main section.wawd h2 {
-    color: var(--navyblue);
+section.services h2 {
+    color: #2E2F42;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -177,32 +166,33 @@ main section.wawd h2 {
     text-transform: capitalize;
 }
 
-main section.wawd ul {
+section.services ul {
     margin-top: 72px;
-    margin-left: 132px;
     display: flex;
+    justify-content: center;
     list-style: none;
     align-items: center;
 }
 
-main section.wawd ul li{
+section.services ul li{
     margin-left: 24px;
     width: 360px;
     height: 300px;
-    border: 1px solid var(--cornflower);
+    border: 1px solid #E7E9FC;
     background:url(<path-to-image>),lightgray 50% / cover no-repeat;
 }
 
-main section.ourteam {
+section.key-people {
     margin-top: 120px;
     width: 1440px;
     height: 732px;
-    background:var(--cloud)
+    background:#F4F4FD;
+    justify-content: center;
 }
 
-main section.ourteam h2 {
+section.key-people h2 {
     padding-top: 120px;
-    color: var(--navyblue);
+    color: #2E2F42;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -211,31 +201,28 @@ main section.ourteam h2 {
     text-transform: capitalize;
 }
 
-main section.ourteam ul {
+section.key-people ul {
     margin-top: 72px;
-    margin-left: 132px;
+    justify-content: center;
     display: flex;
     list-style: none;
-    align-items: center;
+    gap: 24px;
 }
 
-main section.ourteam ul li{
+section.key-people ul li{
     text-align: center ;
-    margin-left: 24px;
     border-radius: 0px 0px 4px 4px;
-    background: var(--white);
+    background: #FFF;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    
 }
 
-main section.ourteam ul li img {
+section.key-people ul li img {
     width: 264px;
     height: 260px;
     background: url(<path-to-image>), lightgray -97.034px -0.927px / 181.897% 251.37% no-repeat;
 }
 
-main section.ourteam ul li h3 {
-    padding-top: 32px;
+section.key-people ul li h3 {
     color: var(--navyblue, #2E2F42);
     font-size: 20px;
     font-weight: 500;
@@ -243,10 +230,8 @@ main section.ourteam ul li h3 {
     letter-spacing: 0.4px;
 }
 
-main section.ourteam ul li p {
-    padding-top: 8px;
-    padding-bottom: 32px;
-    color: var(--slate);
+section.key-people ul li p {
+    color: #434455;
     font-size: 16px;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
@@ -254,17 +239,16 @@ main section.ourteam ul li p {
 
 /* studio and portfolio html */
 footer {
-    width: 1440px;
     height: 312px;
-    background: var(--navyblue);
+    background: #2E2F42;
 }
 
 footer .logo {
-    display: flex;
     text-decoration: none;
     margin-left: 156px;
-
+    display: flex;
 }
+
 footer a span {
     margin-top: 101.5px;
     font-family: "Raleway";
@@ -274,94 +258,77 @@ footer a span {
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
+
 footer a span.web {
-    width: 44px;
-    height: 21px;
-    color: var(--iris);
+    color: #4D5AE5;
 }
 
 footer a span.studio {
-    width: 71px;
-    height: 21px;
-    color: var(--cloud);
+    color: #F4F4FD;
 }
 
 footer p {
     margin-left: 156px;
     padding-top: 17.5px;
     width: 264px;
-    color: var(--cloud);
+    color: #F4F4FD;
     font-size: 16px;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
 }
 
 /* portfolio html */
-.filters {
-    margin-left: 427px;
-    margin-top: 96px
+.filters{
+    margin-bottom: 72px;
+    margin-top: 96px;
 }
 
-.filters ul {
-    display: inline-flex;
+.filters ul{
+    display: flex;
+    justify-content:center;
     gap: 24px;
+    list-style:none;
 }
 
-.filters li {
-    list-style: none;
-}
-
-.filters ul li button {
-    color: var(--iris);
+.filters li button{
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #E7E9FC;
+    background: #F4F4FD;
+    color:#4D5AE5;
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 24px; /* 150%*/
     letter-spacing: 0.64px;
-    padding: 12px 24px;
-    border-radius: 4px;
-    border: 1px solid var(--cornflower);
-    transition background: var(--cloud);
-    cursor:pointer;
-}
-
-.filters ul li button:hover {
-    color:var(--white);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.64px;
-    display: flex;
-    padding: 12px 24px;
-    border-radius: 4px;
-    border: 1px solid var(--cornflower);
-    border-radius: 4px;
-    background: var(--ocean, #404BBF);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     cursor: pointer;
-}
-.filters ul li button:focus {
-    color:var(--white);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.64px;
-    display: flex;
-    padding: 12px 24px;
+} 
+
+.filters li button:hover{
+    color:#FFF;
     border-radius: 4px;
-    border: 1px solid var(--cornflower);
+    background: #404BBF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.filters li button:focus{
+    color: var(--white, #FFF);
     border-radius: 4px;
     background: var(--ocean, #404BBF);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .project-cards{
-    margin-left: 156px;
     margin-top: 72px;
     margin-bottom: 82px;
 }
 
 .project-cards ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
     gap:24px
 }
@@ -372,7 +339,6 @@ footer p {
     background: var(--white, #FFF);
     width: 360px;
     height: 420px;
-    
 }
 
 .project-cards li a img {
@@ -382,7 +348,7 @@ footer p {
 
 .project-cards li h3 {
     margin-top: 32px;
-    color: var(--navyblue);
+    color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px; /* 120% */
@@ -390,7 +356,7 @@ footer p {
 }
 
 .project-cards li p {
-    color: var(--slate);
+    color: #434455;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px; /* 150% */
