@@ -1,5 +1,5 @@
 # goit-markup-hw-02
-    # Instructions
+    Instructions
 
 ### V1.1
 
@@ -26,7 +26,7 @@
 
 **«A7»** All raster images are optimized using [squoosh](https://squoosh.app/).
 
-«A8» The code is in line with the [guide](https://codeguide.co/).
+**«A8»** The code is in line with the [guide](https://codeguide.co/).
 
 ### Markup
 **«B1»** The Portfolio page layout is in the **portfolio.html** file.
@@ -56,107 +56,3 @@
 **«B13»** All fonts and their variations (weight and type) required for the layout are linked from the Google Fonts service with one link. The required weight for Raleway is 800, and for Roboto, it is 400, 500, 700 and 900.
 
 **«B14»** There are no additional elements, such as spans or links, inside the button markup.
-
-### Bold
-
-**bold text**
-
-### Italic
-
-*italicized text*
-
-### Blockquote
-
-> goit
-
-### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-- First item
-- Second item
-- Third item
-
-### Code
-
-`code`
-
-### Horizontal Rule
-
----
-
-### Link
-
-[Markdown Guide](https://www.markdownguide.org)
-
-### Image
-
-![alt text](https://www.markdownguide.org/assets/images/tux.png)
-
-## Extended Syntax
-
-These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
-
-### Table
-
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-### Fenced Code Block
-
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-### Footnote
-
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
-### Heading ID
-
-### My Great Heading {#custom-id}
-
-### Definition List
-
-term
-: definition
-
-### Strikethrough
-
-~~The world is flat.~~
-
-### Task List
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
-
-### Emoji
-
-That is so funny! :joy:
-
-(See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
-
-### Highlight
-
-I need to highlight these **very important words**.
-
-### Subscript
-
-H~2~O
-
-### Superscript
-
-X^2^
