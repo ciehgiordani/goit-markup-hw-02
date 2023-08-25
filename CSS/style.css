@@ -233,12 +233,11 @@ body {
     background: var(--navyblue);
 }
 
-.logo {
+.logo{
     text-decoration: none;
     margin-left: 156px;
     display: flex;
 }
-
 .end-web{
     margin-top: 101.5px;
     font-family: "Raleway";
@@ -250,12 +249,12 @@ body {
     color: var(--iris);
 }
 
-.end-studio{
+.end-studio {
     margin-top: 101.5px;
     font-family: "Raleway";
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.16;  /* 116.667% */
+    line-height: 1.16; /* 116.667% */
     letter-spacing: 0.54px;
     text-transform: uppercase;
     color: var(--cloud);
